@@ -1,0 +1,895 @@
+/* Template custom icon Font*/
+@font-face {
+  font-family: icomoon;
+  src: url(../fonts/icomoon.eot);
+  src: url(../fonts/icomoon.eot) format("embedded-opentype"), url(../fonts/icomoon.ttf) format("truetype"), url(../fonts/icomoon.woff) format("woff"), url(../fonts/icomoon.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left2:before {
+  content: "\e9d6";
+}
+
+.icon-arrow-right2:before {
+  content: "\e9d7";
+}
+
+.icon-pdf-file:before {
+  content: "\e9d5";
+}
+
+.icon-clock:before {
+  content: "\e9d4";
+}
+
+.icon-quote:before {
+  content: "\e9d3";
+}
+
+.icon-arrow-left:before {
+  content: "\e9ce";
+}
+
+.icon-arrow-right:before {
+  content: "\e9d2";
+}
+
+.icon-check:before {
+  content: "\e91e";
+}
+
+.icon-elearning:before {
+  content: "\e9cf";
+}
+
+.icon-factory:before {
+  content: "\e9d0";
+}
+
+.icon-hospital:before {
+  content: "\e9d1";
+}
+
+.icon-arrow-left-up:before {
+  content: "\e9cd";
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.icon-arrow-right-up:before {
+  content: "\e9cd";
+}
+
+.icon-arrow-up-long:before {
+  content: "\e900";
+}
+
+.icon-cart:before {
+  content: "\e901";
+}
+
+.icon-email:before {
+  content: "\e902";
+}
+
+.icon-facebook:before {
+  content: "\e903";
+}
+
+.icon-linkedin:before {
+  content: "\e904";
+}
+
+.icon-location:before {
+  content: "\e905";
+}
+
+.icon-phone:before {
+  content: "\e906";
+}
+
+.icon-search:before {
+  content: "\e907";
+}
+
+.icon-twitter:before {
+  content: "\e908";
+}
+
+.icon-youtube:before {
+  content: "\e909";
+}
+
+.icon-animal:before {
+  content: "\e90a";
+}
+
+.icon-animal-1:before {
+  content: "\e90b";
+}
+
+.icon-apple:before {
+  content: "\e90c";
+}
+
+.icon-automobile:before {
+  content: "\e90d";
+}
+
+.icon-bad-smell:before {
+  content: "\e90e";
+}
+
+.icon-bag:before {
+  content: "\e90f";
+}
+
+.icon-barrel:before {
+  content: "\e910";
+}
+
+.icon-barrel-1:before {
+  content: "\e911";
+}
+
+.icon-bin:before {
+  content: "\e912";
+}
+
+.icon-bin-1:before {
+  content: "\e913";
+}
+
+.icon-bin-2:before {
+  content: "\e914";
+}
+
+.icon-bin-3:before {
+  content: "\e915";
+}
+
+.icon-bin-4:before {
+  content: "\e916";
+}
+
+.icon-bin-5:before {
+  content: "\e917";
+}
+
+.icon-biodegradable:before {
+  content: "\e918";
+}
+
+.icon-biodegradable-1:before {
+  content: "\e919";
+}
+
+.icon-burning:before {
+  content: "\e91a";
+}
+
+.icon-clean:before {
+  content: "\e91b";
+}
+
+.icon-cleaner:before {
+  content: "\e91c";
+}
+
+.icon-cleaning:before {
+  content: "\e91d";
+}
+
+.icon-construction:before {
+  content: "\e91e";
+}
+
+.icon-contaminated:before {
+  content: "\e91f";
+}
+
+.icon-contaminated-1:before {
+  content: "\e920";
+}
+
+.icon-cutlery:before {
+  content: "\e921";
+}
+
+.icon-delete:before {
+  content: "\e922";
+}
+
+.icon-delete-1:before {
+  content: "\e923";
+}
+
+.icon-delete-2:before {
+  content: "\e924";
+}
+
+.icon-deleted:before {
+  content: "\e925";
+}
+
+.icon-detergent:before {
+  content: "\e926";
+}
+
+.icon-dump-truck:before {
+  content: "\e927";
+}
+
+.icon-dump-truck-1:before {
+  content: "\e928";
+}
+
+.icon-dusting:before {
+  content: "\e929";
+}
+
+.icon-dustpan:before {
+  content: "\e92a";
+}
+
+.icon-environment:before {
+  content: "\e92b";
+}
+
+.icon-feather-duster:before {
+  content: "\e92c";
+}
+
+.icon-fish:before {
+  content: "\e92d";
+}
+
+.icon-fishbone:before {
+  content: "\e92e";
+}
+
+.icon-garbage:before {
+  content: "\e92f";
+}
+
+.icon-garbage-1:before {
+  content: "\e930";
+}
+
+.icon-garbage-2:before {
+  content: "\e931";
+}
+
+.icon-garbage-3:before {
+  content: "\e932";
+}
+
+.icon-garbage-4:before {
+  content: "\e933";
+}
+
+.icon-garbage-5:before {
+  content: "\e934";
+}
+
+.icon-garbage-6:before {
+  content: "\e935";
+}
+
+.icon-garbage-7:before {
+  content: "\e936";
+}
+
+.icon-garbage-8:before {
+  content: "\e937";
+}
+
+.icon-garbage-9:before {
+  content: "\e938";
+}
+
+.icon-garbage-10:before {
+  content: "\e939";
+}
+
+.icon-garbage-11:before {
+  content: "\e93a";
+}
+
+.icon-garbage-12:before {
+  content: "\e93b";
+}
+
+.icon-garbage-13:before {
+  content: "\e93c";
+}
+
+.icon-garbage-14:before {
+  content: "\e93d";
+}
+
+.icon-garbage-15:before {
+  content: "\e93e";
+}
+
+.icon-garbage-16:before {
+  content: "\e93f";
+}
+
+.icon-garbage-bag:before {
+  content: "\e940";
+}
+
+.icon-garbage-bin:before {
+  content: "\e941";
+}
+
+.icon-garbage-bin-1:before {
+  content: "\e942";
+}
+
+.icon-garbage-bin-2:before {
+  content: "\e943";
+}
+
+.icon-garbage-bin-3:before {
+  content: "\e944";
+}
+
+.icon-garbage-bin-4:before {
+  content: "\e945";
+}
+
+.icon-garbage-bin-5:before {
+  content: "\e946";
+}
+
+.icon-garbage-can:before {
+  content: "\e947";
+}
+
+.icon-garbage-can-1:before {
+  content: "\e948";
+}
+
+.icon-garbage-can-2:before {
+  content: "\e949";
+}
+
+.icon-garbage-truck:before {
+  content: "\e94a";
+}
+
+.icon-garbage-truck-1:before {
+  content: "\e94b";
+}
+
+.icon-garbage-truck-2:before {
+  content: "\e94c";
+}
+
+.icon-garbage-truck-3:before {
+  content: "\e94d";
+}
+
+.icon-garbage-truck-4:before {
+  content: "\e94e";
+}
+
+.icon-garbage-truck-5:before {
+  content: "\e94f";
+}
+
+.icon-grab:before {
+  content: "\e950";
+}
+
+.icon-hazardous:before {
+  content: "\e951";
+}
+
+.icon-hazardous-1:before {
+  content: "\e952";
+}
+
+.icon-hazardous-2:before {
+  content: "\e953";
+}
+
+.icon-heavy-vehicle:before {
+  content: "\e954";
+}
+
+.icon-human:before {
+  content: "\e955";
+}
+
+.icon-incineration:before {
+  content: "\e956";
+}
+
+.icon-junk:before {
+  content: "\e957";
+}
+
+.icon-littering:before {
+  content: "\e958";
+}
+
+.icon-littering-1:before {
+  content: "\e959";
+}
+
+.icon-microplastics:before {
+  content: "\e95a";
+}
+
+.icon-microplastics-1:before {
+  content: "\e95b";
+}
+
+.icon-no-plastic:before {
+  content: "\e95c";
+}
+
+.icon-no-plastic-1:before {
+  content: "\e95d";
+}
+
+.icon-no-plastic-bottles:before {
+  content: "\e95e";
+}
+
+.icon-no-plastic-bottles-1:before {
+  content: "\e95f";
+}
+
+.icon-no-plastic-bottles-2:before {
+  content: "\e960";
+}
+
+.icon-no-plastic-bottles-3:before {
+  content: "\e961";
+}
+
+.icon-no-plastic-bottles-4:before {
+  content: "\e962";
+}
+
+.icon-ocean:before {
+  content: "\e963";
+}
+
+.icon-ocean-1:before {
+  content: "\e964";
+}
+
+.icon-paper-shredder:before {
+  content: "\e965";
+}
+
+.icon-plastic:before {
+  content: "\e966";
+}
+
+.icon-plastic-1:before {
+  content: "\e967";
+}
+
+.icon-plastic-2:before {
+  content: "\e968";
+}
+
+.icon-plastic-3:before {
+  content: "\e969";
+}
+
+.icon-plastic-4:before {
+  content: "\e96a";
+}
+
+.icon-plastic-5:before {
+  content: "\e96b";
+}
+
+.icon-plastic-6:before {
+  content: "\e96c";
+}
+
+.icon-plastic-7:before {
+  content: "\e96d";
+}
+
+.icon-plastic-8:before {
+  content: "\e96e";
+}
+
+.icon-plastic-bottle:before {
+  content: "\e96f";
+}
+
+.icon-pollution:before {
+  content: "\e970";
+}
+
+.icon-pollution-1:before {
+  content: "\e971";
+}
+
+.icon-pollution-2:before {
+  content: "\e972";
+}
+
+.icon-pollution-3:before {
+  content: "\e973";
+}
+
+.icon-pollution-4:before {
+  content: "\e974";
+}
+
+.icon-pollution-5:before {
+  content: "\e975";
+}
+
+.icon-radiactive:before {
+  content: "\e976";
+}
+
+.icon-radiation-detector:before {
+  content: "\e977";
+}
+
+.icon-radiation-detector-1:before {
+  content: "\e978";
+}
+
+.icon-radioactive:before {
+  content: "\e979";
+}
+
+.icon-recycle:before {
+  content: "\e97a";
+}
+
+.icon-recycle-1:before {
+  content: "\e97b";
+}
+
+.icon-recycle-2:before {
+  content: "\e97c";
+}
+
+.icon-recycle-3:before {
+  content: "\e97d";
+}
+
+.icon-recycle-bin:before {
+  content: "\e97e";
+}
+
+.icon-recycle-bin-1:before {
+  content: "\e97f";
+}
+
+.icon-recycle-bin-2:before {
+  content: "\e980";
+}
+
+.icon-recycle-bin-3:before {
+  content: "\e981";
+}
+
+.icon-recycle-bin-4:before {
+  content: "\e982";
+}
+
+.icon-recycle-bin-5:before {
+  content: "\e983";
+}
+
+.icon-recycle-bin-6:before {
+  content: "\e984";
+}
+
+.icon-recycle-bin-7:before {
+  content: "\e985";
+}
+
+.icon-recycle-bin-8:before {
+  content: "\e986";
+}
+
+.icon-recycle-bin-9:before {
+  content: "\e987";
+}
+
+.icon-recycle-bin-10:before {
+  content: "\e988";
+}
+
+.icon-recycling:before {
+  content: "\e989";
+}
+
+.icon-recycling-1:before {
+  content: "\e98a";
+}
+
+.icon-recycling-bin:before {
+  content: "\e98b";
+}
+
+.icon-recycling-bin-1:before {
+  content: "\e98c";
+}
+
+.icon-recycling-bin-2:before {
+  content: "\e98d";
+}
+
+.icon-recycling-truck:before {
+  content: "\e98e";
+}
+
+.icon-reduce:before {
+  content: "\e98f";
+}
+
+.icon-reduce-1:before {
+  content: "\e990";
+}
+
+.icon-reduce-2:before {
+  content: "\e991";
+}
+
+.icon-reduce-3:before {
+  content: "\e992";
+}
+
+.icon-reusable:before {
+  content: "\e993";
+}
+
+.icon-reusable-bottle:before {
+  content: "\e994";
+}
+
+.icon-right-up:before {
+  content: "\e995";
+}
+
+.icon-rubbish:before {
+  content: "\e996";
+}
+
+.icon-search1:before {
+  content: "\e997";
+}
+
+.icon-sewage:before {
+  content: "\e998";
+}
+
+.icon-sewage-1:before {
+  content: "\e999";
+}
+
+.icon-sewage-2:before {
+  content: "\e99a";
+}
+
+.icon-sewage-3:before {
+  content: "\e99b";
+}
+
+.icon-sewage-4:before {
+  content: "\e99c";
+}
+
+.icon-sewer:before {
+  content: "\e99d";
+}
+
+.icon-stink:before {
+  content: "\e99e";
+}
+
+.icon-stinky:before {
+  content: "\e99f";
+}
+
+.icon-toothpaste:before {
+  content: "\e9a0";
+}
+
+.icon-toothpaste-1:before {
+  content: "\e9a1";
+}
+
+.icon-toxic:before {
+  content: "\e9a2";
+}
+
+.icon-toxic-waste:before {
+  content: "\e9a3";
+}
+
+.icon-toxic-waste-1:before {
+  content: "\e9a4";
+}
+
+.icon-toxic-waste-2:before {
+  content: "\e9a5";
+}
+
+.icon-toxic-waste-3:before {
+  content: "\e9a6";
+}
+
+.icon-trash:before {
+  content: "\e9a7";
+}
+
+.icon-trash-1:before {
+  content: "\e9a8";
+}
+
+.icon-trash-2:before {
+  content: "\e9a9";
+}
+
+.icon-trash-3:before {
+  content: "\e9aa";
+}
+
+.icon-trash-4:before {
+  content: "\e9ab";
+}
+
+.icon-trash-5:before {
+  content: "\e9ac";
+}
+
+.icon-trash-6:before {
+  content: "\e9ad";
+}
+
+.icon-trash-7:before {
+  content: "\e9ae";
+}
+
+.icon-trash-8:before {
+  content: "\e9af";
+}
+
+.icon-trash-9:before {
+  content: "\e9b0";
+}
+
+.icon-trash-10:before {
+  content: "\e9b1";
+}
+
+.icon-trash-bin:before {
+  content: "\e9b2";
+}
+
+.icon-trash-bin-1:before {
+  content: "\e9b3";
+}
+
+.icon-trash-bin-2:before {
+  content: "\e9b4";
+}
+
+.icon-trash-bin-3:before {
+  content: "\e9b5";
+}
+
+.icon-trash-bin-4:before {
+  content: "\e9b6";
+}
+
+.icon-trash-bin-5:before {
+  content: "\e9b7";
+}
+
+.icon-trash-bin-6:before {
+  content: "\e9b8";
+}
+
+.icon-trash-bin-7:before {
+  content: "\e9b9";
+}
+
+.icon-turtle:before {
+  content: "\e9ba";
+}
+
+.icon-warehouse:before {
+  content: "\e9bb";
+}
+
+.icon-waste:before {
+  content: "\e9bc";
+}
+
+.icon-waste-1:before {
+  content: "\e9bd";
+}
+
+.icon-waste-2:before {
+  content: "\e9be";
+}
+
+.icon-waste-3:before {
+  content: "\e9bf";
+}
+
+.icon-waste-4:before {
+  content: "\e9c0";
+}
+
+.icon-waste-5:before {
+  content: "\e9c1";
+}
+
+.icon-waste-6:before {
+  content: "\e9c2";
+}
+
+.icon-waste-7:before {
+  content: "\e9c3";
+}
+
+.icon-waste-8:before {
+  content: "\e9c4";
+}
+
+.icon-waste-9:before {
+  content: "\e9c5";
+}
+
+.icon-waste-10:before {
+  content: "\e9c6";
+}
+
+.icon-waste-11:before {
+  content: "\e9c7";
+}
+
+.icon-waste-12:before {
+  content: "\e9c8";
+}
+
+.icon-waste-13:before {
+  content: "\e9c9";
+}
+
+.icon-waste-bin:before {
+  content: "\e9ca";
+}
+
+.icon-waste-of-time:before {
+  content: "\e9cb";
+}
+
+.icon-whale:before {
+  content: "\e9cc";
+}
