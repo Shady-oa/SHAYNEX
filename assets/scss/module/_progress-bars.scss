@@ -1,0 +1,47 @@
+/*-----------------------
+    Progress Bars
+------------------------*/
+.progress-item {
+    margin-bottom: 37px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: var(--color-gray-600);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress-bar {
+    overflow: visible;
+    position: relative;
+    border-radius: 2px;
+    height: 4px;
+    width: 0;
+    background-color: var(--color-primary-500);
+    @include prefix(transition, width 2s ease, webkit moz ms o);
+}
+
+.progress-title {
+    font-family: var(--font-secondary);
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary-700);
+    margin-bottom: 18px;
+}
+
+.progress-percentage {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: -31px;
+    right: 0;
+    color: var(--color-primary-600);
+}

@@ -1,0 +1,21 @@
+/*------------------------
+    Alerts
+--------------------------*/
+.alert-primary {
+    padding: 30px;
+    border-radius: 15px;
+    color: var(--color-secondary);
+    border-color: transparent;
+    background-color: #e0f8f4;
+
+    .alert-title {
+        font-size: 19px;
+    }
+}
+
+.alert-info {
+    padding: 27px;
+    color: var(--bs-gray);
+    border-color: #eef7ff;
+    background-color: #eef7ff;
+}

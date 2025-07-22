@@ -1,0 +1,17 @@
+/*-------------------
+    lists
+-------------------*/
+.contact-list {
+    li {
+        font-size: 14px;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--bs-gray);
+        }
+    }
+}

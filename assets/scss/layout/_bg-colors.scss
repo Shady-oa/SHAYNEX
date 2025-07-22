@@ -1,0 +1,240 @@
+/*-------------------------
+   Background & Colors
+--------------------------*/
+//  Colors 
+.color-gray {
+    color: var(--color-gray-100) !important;
+}
+
+.color-gray-400 {
+    color: var(--color-gray-400) !important;
+}
+
+.color-dark {
+    color: var(--color-dark) !important;
+}
+
+.color-primary,
+.color-primary-hover:hover {
+    color: var(--color-primary) !important;
+}
+
+.color-primary-200 {
+    color: var(--color-primary-200) !important;
+}
+
+a.color-primary:hover {
+    color: var(--color-secondary) !important;
+}
+
+.color-secondary {
+    color: var(--color-secondary) !important;
+}
+
+a.color-secondary:hover {
+    color: var(--color-primary) !important;
+}
+
+.color-heading {
+    color: var(--color-accent) !important;
+}
+
+.color-body {
+    color: var(--bs-gray) !important;
+}
+
+.color-white,
+.color-white-hover:hover,
+a.color-white-hover:hover {
+    color: var(--color-white) !important;
+}
+
+//  backgrounds 
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-primary-300 {
+    background-color: var(--color-primary-300) !important;
+}
+
+.bg-primary-700 {
+    background-color: var(--color-primary-700) !important;
+}
+
+.bg-gray-700 {
+    background-color: var(--color-gray-700) !important;
+}
+
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+
+.bg-gray {
+    background-color: var(--color-gray-100) !important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
+
+.bg-heading {
+    background-color: var(--color-accent) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.bg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.background-size-auto {
+    background-size: auto !important;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+.bg-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(#1b1a1a, 0.25);
+}
+
+.bg-overlay-2:before {
+    background-color: rgba(#1b1a1a, 0.15);
+}
+
+.bg-overlay-3:before {
+    background-color: rgba(#1b1a1a, 0.05);
+}
+
+.bg-overlay-gradient:before {
+    background-color: transparent;
+    opacity: 0.65;
+    background-image: linear-gradient(180deg, #010711 0%, rgba(27, 26, 26, 0.65) 34%);
+}
+
+.bg-overlay-primary-200-gradient {
+    &:before {
+        background-image: -webkit-linear-gradient(to top, rgba(var(--color-primary-300-rgb), 0) 0%, var(--color-primary-300) 40%, var(--color-primary-300) 100%);
+        background-image: -moz-linear-gradient(to top, rgba(var(--color-primary-300-rgb), 0) 0%, var(--color-primary-300) 40%, var(--color-primary-300) 100%);
+        background-image: -ms-linear-gradient(to top, rgba(var(--color-primary-300-rgb), 0) 0%, var(--color-primary-300) 40%, var(--color-primary-300) 100%);
+        background-image: -o-linear-gradient(to top, rgba(var(--color-primary-300-rgb), 0) 0%, var(--color-primary-300) 40%, var(--color-primary-300) 100%);
+        background-image: linear-gradient(to top, rgba(var(--color-primary-300-rgb), 0) 0%, var(--color-primary-300) 40%, var(--color-primary-300) 100%);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        opacity: .85;
+        background-color: var(--color-primary-300);
+    }
+}
+
+.bg-overlay-secondary:before {
+    background-color: rgba($color-secondary, 0.93);
+}
+
+.bg-overlay-primary:before {
+    background-color: rgba($color-primary, 0.9);
+}
+
+.bg-overlay-primary-gradient {
+    &:before {
+        opacity: 0.9;
+        background-color: var(--color-primary);
+    }
+
+    &:after {
+        --overlay-color: 26, 126, 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: -moz-linear-gradient(top, rgba(var(--overlay-color), 1) 0%, rgba(var(--overlay-color), 1) 2%, rgba(var(--overlay-color), 0) 100%);
+        background: -webkit-linear-gradient(top, rgba(var(--overlay-color), 1) 0%, rgba(var(--overlay-color), 1) 2%, rgba(var(--overlay-color), 0) 100%);
+        background: linear-gradient(to bottom, rgba(var(--overlay-color), 1) 0%, rgba(var(--overlay-color), 1) 2%, rgba(var(--overlay-color), 0) 100%);
+    }
+}
+
+.bg-overlay-secondary-gradient {
+    &:before {
+        opacity: 0.87;
+        background-color: var(--color-secondary);
+    }
+
+    &:after {
+        --overlay-color: 228, 164, 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-image: linear-gradient(to bottom, rgba(var(--overlay-color), 0) 0%, var(--color-secondary) 80%, var(--color-secondary) 100%);
+    }
+}
+
+.bg-overlay-gray {
+    &:before {
+        opacity: .9;
+        background-color: #f6f6f1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(to bottom, #f6f6f1 0%, #f6f6f1 20%, rgba(246, 246, 241, 4%) 97%, rgba(246, 246, 241, 0) 100%);
+    }
+}
+
+.bg-gray-gradient {
+    background-image: -webkit-linear-gradient(90deg, rgba(6, 70, 178, 0) 0%, rgba(11, 173, 246, 0) 3%, rgb(246, 247, 248) 80%);
+    background-image: -moz-linear-gradient(90deg, rgba(6, 70, 178, 0) 0%, rgba(11, 173, 246, 0) 3%, rgb(246, 247, 248) 80%);
+    background-image: -ms-linear-gradient(90deg, rgba(6, 70, 178, 0) 0%, rgba(11, 173, 246, 0) 3%, rgb(246, 247, 248) 80%);
+    background-image: linear-gradient(90deg, rgba(6, 70, 178, 0) 0%, rgba(11, 173, 246, 0) 3%, rgb(246, 247, 248) 80%);
+}
+
+.has-pattern-bg:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 377px;
+    z-index: 1;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url(../images/backgrounds/pattern2.png);
+}

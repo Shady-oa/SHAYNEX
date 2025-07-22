@@ -1,0 +1,107 @@
+/*------------------- 
+    Icons & clip paths
+------------------*/
+.social-icons {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+
+    li {
+        margin-right: 10px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 0 2px var(--color-primary-200) inset;
+            @include prefix(transition, all 0.4s linear, webkit moz o);
+
+            .social-icon {
+                font-size: 20px;
+                color: var(--color-primary-200);
+                @include prefix(transition, all 0.4s linear, webkit moz o);
+            }
+
+            &:hover {
+                box-shadow: 0 0 0 2px var(--color-secondary) inset;
+
+                .social-icon {
+                    color: var(--color-secondary);
+                }
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.icon-arrow-right,
+.icon-arrow-left {
+    font-size: 65%;
+}
+
+.plus-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 3px;
+    font-style: normal;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+}
+
+.rating {
+    .active {
+        color: #f4572e;
+    }
+}
+
+.curve-top-shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    transform: rotate(180deg);
+
+    .curve-svg {
+        height: 48px;
+        width: 100%;
+    }
+
+    .curve-path {
+        fill: var(--color-white);
+        transform-origin: center;
+        @include prefix(transform, rotateY(0), webkit moz ms o);
+    }
+}
+
+.hexagon-clippath {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon-clippath2 {
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+.octagon-clippath {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.cms-octagon-clippath {
+    filter: url(#rounded-clippath-filter);
+}

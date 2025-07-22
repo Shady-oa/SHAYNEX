@@ -1,0 +1,392 @@
+/*-----------------------
+     fancybox 
+------------------------*/
+.fancybox-item {
+    position: relative;
+
+    .fancybox-icon {
+        color: var(--color-gray-200);
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .fancybox-title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .fancybox-desc {
+        margin-bottom: 0;
+    }
+
+    .fancybox-title,
+    .fancybox-desc {
+        position: relative;
+        z-index: 2;
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+    }
+}
+
+.fancybox-layout1 {
+    .fancybox-item {
+        margin: 35px 0 0;
+
+        &:hover {
+            .fancybox-icon {
+                animation: bounce 1s linear infinite;
+            }
+        }
+    }
+}
+
+.fancybox-layout2 {
+    .fancybox-item {
+        padding: 0 25px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid var(--color-gray-600);
+
+        &:before {
+            font-family: 'icomoon';
+            content: "\e9d2";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 48px;
+            height: 48px;
+            z-index: 2;
+            font-size: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary-200);
+            background-color: var(--color-gray-600);
+            @include prefix(transition, all .4s ease, webkit moz ms o);
+            @include prefix(transform, translate(50%, -50%), webkit moz ms o);
+        }
+
+        &:last-of-type {
+            &:before {
+                display: none;
+            }
+        }
+
+        .fancybox-title {
+            font-size: 20px;
+        }
+
+        .fancybox-body {
+            @include prefix(transition, all .4s ease, webkit moz ms o);
+            @include prefix(transform, translateY(50px), webkit moz ms o);
+        }
+
+        .fancybox-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            font-size: 50px;
+            margin: 0 auto 36px;
+            background-color: var(--color-secondary);
+            @include prefix(transition, all .3s ease, webkit moz ms o);
+        }
+
+        .btn {
+            height: 48px;
+            min-width: 150px;
+            margin-top: 26px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover {
+            .fancybox-body {
+                @include prefix(transform, translateY(-50px), webkit moz ms o);
+            }
+
+            .fancybox-icon {
+                background-color: var(--color-primary);
+            }
+
+            .btn {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.fancybox-layout3 {
+    padding-bottom: 170px;
+
+    .fancybox-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        .fancybox-icon {
+            font-size: 45px;
+            flex: 0 0 65px;
+            max-width: 65px;
+        }
+
+        .fancybox-title {
+            font-size: 18px;
+        }
+
+        &:hover {
+            .fancybox-icon {
+                animation: bounce 1s linear infinite;
+            }
+        }
+    }
+}
+
+.fancybox-layout9 {
+    .fancybox-item {
+        display: flex;
+        margin-bottom: 42px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .fancybox-body {
+            flex: 0 0 calc(100% - 80px);
+            max-width: calc(100% - 80px);
+        }
+
+        .fancybox-icon {
+            font-size: 50px;
+            padding-top: 15px;
+            flex: 0 0 80px;
+            max-width: 80px;
+        }
+
+        .fancybox-title {
+            font-size: 19px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.fancybox-light .fancybox-item {
+    .fancybox-title {
+        color: var(--color-white);
+    }
+
+    .fancybox-icon,
+    .fancybox-desc {
+        color: var(--color-gray-100);
+    }
+}
+
+.fancybox-carousel {
+    overflow-x: hidden;
+
+    .slick-list {
+        margin: 0 -15px;
+        overflow: visible;
+    }
+
+    .slick-slide {
+        margin: 0 15px;
+        @include prefix(transition, all 0.3s ease, webkit moz ms o);
+
+        &.slick-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:not(.slick-active) {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .slick-dots li:not(.slick-active) {
+        button {
+            background-color: var(--color-white);
+        }
+    }
+
+    .fancybox-item .fancybox-desc {
+        min-height: 100px;
+    }
+}
+
+.certificate {
+    .certificate-img {
+        padding: 45px;
+        text-align: center;
+        border-radius: 3px;
+        background-color: var(--color-gray-700);
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+    }
+
+    .certificate-body {
+        padding: 33px 35px;
+    }
+
+    .certificate-title {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    .certificate-desc {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        .certificate-img {
+            background-color: var(--color-primary);
+        }
+    }
+}
+
+@media(min-width:1200px) {
+
+    .fancybox-carousel .carousel-container {
+        margin-right: -140px;
+
+        .slick-dots {
+            margin-right: 140px;
+        }
+    }
+}
+
+@media(min-width:1400px) {
+    .fancybox-carousel {
+        .slick-list {
+            margin: -20px;
+        }
+
+        .slick-slide {
+            margin: 20px;
+        }
+    }
+}
+
+@media(min-width:1500px) {
+    .fancybox-carousel .carousel-container {
+        margin-right: -500px;
+
+        .slick-dots {
+            margin-right: 500px;
+        }
+    }
+}
+
+
+@media(min-width:992px) {
+
+    .fancybox-layout2 {
+        .fancybox-item {
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 0 40px;
+        }
+    }
+
+    .fancybox-layout9 {
+        .fancybox-item {
+            &:hover {
+                .fancybox-icon {
+                    animation: slideTopDown 1s infinite;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:991px) and (max-width:1150px) {
+
+    .fancybox-layout2 .fancybox-item {
+        padding: 30px;
+    }
+}
+
+
+@media(max-width:991px) {
+    .fancybox-layout1 .fancybox-item {
+        margin: 0 0 20px;
+    }
+
+    .fancybox-layout2 .fancybox-item {
+        padding: 30px;
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        &:before {
+            display: none;
+        }
+
+        .fancybox-body,
+        .fancybox-body:hover {
+            @include prefix(transform, translateY(0), webkit moz ms o);
+        }
+
+        .btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .fancybox-item {
+        .fancybox-icon {
+            font-size: 40px;
+        }
+
+        .fancybox-title {
+            font-size: 15px !important;
+            margin-bottom: 5px;
+        }
+    }
+
+    .fancybox-layout3 {
+        padding-bottom: 120px;
+    }
+
+    .fancybox-layout9 .fancybox-item {
+        margin-bottom: 20px;
+
+        .fancybox-title {
+            margin-bottom: 10px;
+        }
+
+        .fancybox-icon {
+            font-size: 40px;
+            flex: 0 0 60px;
+            max-width: 60px;
+        }
+
+        .fancybox-body {
+            flex: 0 0 calc(100% - 60px);
+            max-width: calc(100% - 60px);
+        }
+    }
+
+    .certificate .certificate-body {
+        padding: 18px;
+    }
+}
+
+@include xs-screens {
+    .fancybox-layout2 .fancybox-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .fancybox-layout3 .fancybox-item .fancybox-icon {
+        font-size: 43px;
+        flex: 0 0 55px;
+        max-width: 55px;
+    }
+}

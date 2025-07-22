@@ -1,0 +1,215 @@
+/*-------------------------
+    Work Process
+-------------------------*/
+.process-item {
+    position: relative;
+    @include prefix(transition, all 0.3s ease, webkit moz ms o);
+}
+
+.work-process-layout1 {
+    .process-item {
+        background-color: var(--color-white);
+
+        .process-number {
+            font-size: 55px;
+            line-height: 1;
+            margin-bottom: 0;
+            min-width: 85px;
+            font-family: var(--font-primary);
+            color: var(--color-primary-700);
+            @include prefix(transition, all 0.3s ease, webkit moz ms o);
+        }
+
+        .process-icon {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            font-size: 120px;
+            line-height: 1;
+            color: rgba(60, 145, 38, 0.1);
+        }
+
+        .process-title {
+            font-size: 19px;
+        }
+
+        .process-desc {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+
+        &:hover {
+            .process-number {
+                animation: bounce 1s linear infinite;
+            }
+        }
+    }
+}
+
+.work-process-layout2 {
+    .process-tabs {
+        .nav-link {
+            --bs-nav-link-padding-x: 45px;
+            --bs-nav-link-padding-y: 20px;
+            --bs-nav-link-font-weight: 700;
+            --bs-nav-link-font-: 16px;
+            position: relative;
+            margin: 0;
+            color: var(--color-white);
+            border-bottom: 1px solid #539e40;
+            counter-increment: num;
+
+            &:before {
+                content: counters(num, '');
+                position: absolute;
+                top: 20px;
+                left: 0;
+                width: 26px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--color-primary-200);
+                background-color: var(--color-white);
+                @include prefix(transition, all 0.3s ease, webkit moz ms o);
+            }
+
+            &:hover,
+            &.active {
+                &:before {
+                    box-shadow: 0 0 0 5px rgba(255, 255, 255, .3);
+                }
+            }
+
+            &:last-of-type {
+                .process-title {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .process-item {
+        z-index: 2;
+        margin: 30px 0;
+        max-width: 440px;
+    }
+
+    .process-title {
+        font-size: 20px;
+        color: var(--color-white);
+    }
+
+    .process-desc {
+        color: var(--color-gray-100);
+        max-width: 330px;
+    }
+
+    .process-icon {
+        position: absolute;
+        bottom: -50px;
+        right: 10px;
+        font-size: 140px;
+        line-height: 1;
+        color: #3c9126;
+        z-index: -1;
+    }
+}
+
+@media (min-width:992px) {
+    .work-process-layout1 {
+        .work-process-banner-wrap {
+            top: 70px;
+            min-height: 100vh;
+        }
+
+        .work-process-banner {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            @include prefix(transition, all 0.3s ease-in-out, webkit moz ms o);
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .cta-banner {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                width: 280px;
+                padding: 40px 37px 40px 40px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -14px;
+                    border-right: 15px solid transparent;
+                    border-top: 17px solid var(--color-white);
+                    @include prefix(transition, all 0.3s ease, webkit moz ms o);
+                }
+
+                .cta-title {
+                    line-height: 1.5;
+                }
+
+                .cta-icon {
+                    margin-bottom: 18px;
+                }
+            }
+
+            &:hover {
+                .cta-banner {
+                    background-color: var(--color-primary);
+
+                    &:after {
+                        border-color: var(--color-primary) transparent transparent transparent;
+                    }
+
+                    .cta-icon,
+                    .cta-title {
+                        color: var(--color-white)
+                    }
+                }
+            }
+        }
+
+        .work-process-text {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 30px;
+
+            .heading {
+                padding-left: 100px;
+            }
+        }
+
+        .process-item {
+            padding-right: 90px;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .work-process-layout1 {
+        .process-item {
+            margin-top: 50px;
+        }
+    }
+
+    .work-process-layout2 .highlights-banner {
+        padding: 20px 30px;
+        margin-bottom: 0;
+    }
+}

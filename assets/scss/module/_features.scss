@@ -1,0 +1,94 @@
+/*-----------------------
+    Features
+------------------------*/
+.feature-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+
+    &:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    &:before {
+        font-family: 'icomoon';
+        content: "\e91e";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 26px;
+        color: var(--color-secondary);
+    }
+
+    .feature-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--color-primary-200);
+        margin-bottom: 18px;
+    }
+}
+
+.features-list-layout2 {
+    .feature-item {
+
+        &:before,
+        .feature-title {
+            color: var(--color-primary-200);
+        }
+    }
+}
+
+.features-list-layout3 .feature-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-gray-200);
+
+    &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.features-list-layout3 .feature-item {
+    padding-left: 45px;
+
+    &:before {
+        width: 26px;
+        border-radius: 50%;
+        color: var(--color-white);
+        background-color: var(--color-secondary);
+    }
+}
+
+.features-light {
+    .feature-item {
+        &:before {
+            color: var(--color-white);
+        }
+
+        .feature-title {
+            color: var(--color-white);
+        }
+    }
+}
+
+/* Mobile Phones and tablets  */
+@include xs-sm-screens {
+    .feature-item {
+        .feature-title {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+}

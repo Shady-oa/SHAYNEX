@@ -1,0 +1,122 @@
+/*----------------------
+    Accordions
+------------------------*/
+.accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 0;
+}
+
+.accordion-item {
+    padding: 12px 0;
+    background-color: transparent;
+
+    &.opened {
+
+        .accordion-header:not(.collapsed) {
+            .accordion-title {
+                &:after {
+                    color: var(--color-white);
+                    background-color: var(--color-primary);
+                    @include prefix(transform, rotate(0), webkit moz ms o);
+                }
+            }
+        }
+    }
+}
+
+.accordion-title {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 23px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    color: var(--color-primary-200);
+
+    &:hover {
+        color: var(--color-primary-200);
+    }
+
+    &:after {
+        font-family: 'icomoon';
+        content: "\e9cd";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        color: var(--color-primary-200);
+        background-color: var(--color-gray-600);
+        @include prefix(transform, rotate(90deg), webkit moz ms o);
+    }
+}
+
+.accordion-body {
+    padding: 0 0 0 40px;
+
+    p {
+        color: var(--bs-gray);
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.custom-accordion-tabs {
+    .accordion-item {
+        padding-top: 0;
+
+        &:not(.active) {
+            .accordion-body {
+                display: none;
+            }
+        }
+    }
+}
+
+.accordion-bordered {
+    .accordion-item {
+        border-bottom: 2px solid var(--color-gray-600);
+
+        &:first-of-type {
+            border-top: 4px solid var(--color-primary);
+        }
+    }
+}
+
+.accordion-light {
+    .accordion-item {
+        .accordion-title {
+            color: var(--color-white);
+        }
+
+        .accordion-body p {
+            color: var(--color-gray-100);
+        }
+
+        &.opened {
+            .accordion-title {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .accordion-item {
+        .accordion-title {
+            font-size: 15px;
+        }
+
+        .accordion-body p {
+            font-size: 13px;
+        }
+    }
+}

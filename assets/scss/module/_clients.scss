@@ -1,0 +1,23 @@
+/*---------------------------
+    Client
+---------------------------*/
+.client {
+	position: relative;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+
+	img {
+		padding: 0 15px;
+		@include prefix(transition, all .3s ease, webkit moz ms o);
+	}
+
+	&:hover img {
+		@include prefix(transform, scale(1.1), webkit moz ms o);
+	}
+}
+
+.clients-light .client img {
+	filter: brightness(100);
+}

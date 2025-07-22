@@ -1,0 +1,41 @@
+/*----------------------
+    Pagination
+-----------------------*/
+.pagination li {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 700;
+        width: 58px;
+        height: 58px;
+        border-radius: 5px;
+        color: var(--color-primary-200);
+        border: 2px solid #81a297;
+        background-color: var(--color-white);
+        @include prefix(transition, all 0.3s ease-in-out, webkit moz ms o);
+    }
+
+    a:hover,
+    a.current {
+        color: var(--color-white);
+        border-color: var(--color-primary-500);
+        background-color: var(--color-primary-500);
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .pagination li a {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+    }
+}

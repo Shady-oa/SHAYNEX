@@ -1,0 +1,432 @@
+/*--------------------
+   Buttons
+---------------------*/
+.btn {
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 195px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 0;
+    @include prefix(transition, all .3s ease, webkit moz ms o);
+
+    &:focus,
+    &.active,
+    &:active {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .icon-filled,
+    .icon-outlined {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        @include prefix(transition, all .3s linear, webkit moz ms o);
+    }
+
+    &:not(.btn-link) {
+
+        span,
+        i {
+            margin: 0 5px;
+        }
+    }
+
+    .icon-right-up {
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+    }
+
+    &:hover {
+        .icon-right-up {
+            @include prefix(transform, rotate(45deg), webkit moz ms o);
+        }
+    }
+}
+
+.btn-primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    &.btn-outlined {
+        color: var(--color-primary);
+        background-color: transparent;
+        border: 2px solid var(--color-primary);
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-primary);
+        }
+    }
+
+    &-style2 {
+        color: var(--color-white);
+        background-color: var(--color-primary-200);
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-primary);
+        }
+    }
+
+    &:active,
+    &:focus,
+    &:not(.btn-outlined):hover {
+        color: var(--color-white);
+        border-color: var(--color-secondary);
+        background-color: var(--color-secondary);
+    }
+}
+
+.btn-primary-200 {
+    color: var(--color-white);
+    background-color: var(--color-primary-200);
+
+    &.btn-outlined {
+        color: var(--color-primary-200);
+        background-color: transparent;
+        border: 2px solid #81a297;
+
+        &:hover {
+            color: var(--color-white);
+            border-color: var(--color-primary-200);
+            background-color: var(--color-primary-200);
+        }
+    }
+
+    &:active,
+    &:focus,
+    &:not(.btn-outlined):hover {
+        color: var(--color-white);
+        border-color: var(--color-primary);
+        background-color: var(--color-primary);
+    }
+}
+
+.btn-secondary {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+
+    &:hover {
+        color: var(--color-white);
+    }
+
+    &.btn-outlined {
+        color: var(--color-secondary);
+        background-color: transparent;
+        border: 2px solid #b2bdd6;
+
+        &:hover {
+            color: var(--color-white);
+            border-color: var(--color-secondary);
+            background-color: var(--color-secondary);
+        }
+    }
+
+    &:active,
+    &:focus,
+    &:hover:not(.btn-link),
+    &:hover:not(.btn-underlined) {
+        color: var(--color-white);
+        border-color: var(--color-primary);
+        background-color: var(--color-primary);
+    }
+
+    &-style2 {
+
+        &:active,
+        &:focus,
+        &:not(.btn-outlined):hover {
+            color: var(--color-secondary);
+            background-color: var(--color-white);
+        }
+    }
+}
+
+.btn-white {
+    color: var(--color-primary-200);
+    background-color: var(--color-white);
+
+    &:active,
+    &:focus {
+        color: var(--color-primary-500);
+        border-color: var(--color-white);
+        background-color: var(--color-white);
+    }
+
+    &:hover:not(.btn-link),
+    &:hover:not(.btn-underlined) {
+        color: var(--color-white);
+        background-color: var(--color-primary-500);
+    }
+
+    &.btn-outlined {
+        color: var(--color-white);
+        background-color: transparent;
+        border: 2px solid var(--color-white);
+
+        &:before {
+            border-right-color: var(--color-white);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+            background-color: var(--color-white);
+        }
+    }
+
+    &-style2 {
+        color: var(--color-primary-200);
+        background-color: var(--color-white);
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-primary-200);
+        }
+    }
+}
+
+.btn-light {
+    color: var(--color-secondary);
+    background-color: var(--color-light);
+
+    &:active,
+    &:focus {
+        color: var(--color-secondary);
+        border-color: var(--color-light);
+        background-color: var(--color-light);
+    }
+
+    &:hover {
+        color: var(--color-white);
+        border-color: var(--color-white);
+        background-color: var(--color-secondary);
+    }
+
+    &.btn-outlined {
+        color: var(--color-white);
+        background-color: transparent;
+        border: 2px solid var(--color-light);
+
+        &:before {
+            border-right-color: var(--color-light);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+            border-color: var(--color-white);
+            background-color: var(--color-white);
+
+            &:before {
+                border-right-color: var(--color-white);
+            }
+        }
+    }
+}
+
+.btn-outlined {
+    background-color: transparent;
+}
+
+.btn-link {
+    min-width: 0;
+    height: auto;
+    padding: 0;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background-color: transparent;
+    }
+
+    &.btn-icon {
+        height: auto;
+        line-height: 1;
+        padding: 0;
+    }
+
+    &.btn-primary {
+        color: var(--color-primary);
+
+        &.btn-underlined {
+            padding-bottom: 3px;
+            border-bottom: 2px solid var(--color-primary) !important;
+        }
+
+        &:hover {
+            color: var(--color-secondary) !important;
+            background-color: transparent;
+
+            &.btn-underlined {
+                border-bottom-color: inherit !important;
+            }
+        }
+    }
+
+    &.btn-primary-200 {
+        color: var(--color-primary-200);
+
+        &.btn-underlined {
+            border-bottom: 2px solid var(--color-primary-200) !important;
+        }
+
+        &:hover {
+            color: var(--color-primary) !important;
+            background-color: transparent;
+
+            &.btn-underlined {
+                border-bottom-color: inherit !important;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        color: var(--color-secondary);
+
+        &.btn-underlined {
+            border-bottom: 2px solid var(--color-secondary);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+
+            &.btn-underlined {
+                border-bottom-color: inherit;
+            }
+        }
+    }
+
+    &.btn-white {
+        color: var(--color-white);
+
+        &.btn-underlined {
+            border-bottom: 2px solid var(--color-white);
+        }
+
+        &:hover {
+            color: var(--color-secondary);
+
+            &.btn-underlined {
+                border-color: var(--color-secondary);
+            }
+        }
+    }
+}
+
+.btn-underlined-primary {
+    border-bottom-color: var(--color-primary) !important;
+
+    &:hover {
+        border-bottom-color: inherit !important;
+    }
+}
+
+.btn-underlined {
+    padding-bottom: 2px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-compacted {
+    min-width: 175px;
+}
+
+.btn-wide {
+    min-width: 250px;
+}
+
+.btn-social {
+    height: 54px;
+    line-height: 54px;
+    width: 54px;
+    min-width: 0 !important;
+    font-weight: 400;
+    color: var(--color-white);
+    border-radius: 3px;
+}
+
+.btn-facebook {
+    background-color: #4267b2;
+}
+
+.btn-twitter {
+    background-color: #1da0f0;
+}
+
+.btn-google-plus {
+    background-color: #ea4335;
+}
+
+.btn-lg {
+    min-width: 200px;
+}
+
+.btn-xl {
+    height: 70px;
+    min-width: 250px;
+
+    i,
+    span {
+        margin: 0 7px;
+    }
+}
+
+.btn-xhight {
+    height: 68px;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-icon-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    font-size: 16px;
+    border-radius: 50%;
+    margin: 10px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 0 10px #f0f1f4;
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .btn:not(.btn-link) {
+        font-size: 13px;
+        min-width: 120px;
+        height: 55px;
+    }
+
+    .btn-icon {
+        padding: 0 10px;
+    }
+
+    .btn-xl {
+        height: 55px;
+        min-width: 150px;
+    }
+}

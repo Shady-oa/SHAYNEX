@@ -1,0 +1,67 @@
+/*-------------------------
+       Counters
+--------------------------*/
+.counter-item {
+  margin-bottom: 30px;
+
+  .counter-number {
+    position: relative;
+    font-size: 54px;
+    line-height: 1;
+    color: var(--color-primary);
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .counter-desc {
+    font-family: var(--font-primary);
+    color: var(--color-primary-600);
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .counter-icon {
+    flex: 0 0 100px;
+    font-size: 65px;
+    color: var(--color-secondary);
+  }
+}
+
+.counters-light {
+  .counter-number {
+    color: var(--color-white);
+  }
+
+  .counter-desc {
+    color: var(--color-gray-100);
+  }
+}
+
+.counters-layout1 {
+  .counter-item {
+    max-width: 330px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--color-gray-600);
+
+    &:last-of-type {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+  .counter-item {
+    .counter-number {
+      font-size: 50px;
+    }
+
+    .counter-desc {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
